@@ -1,12 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useContext} from 'react';
 import AppRoutes from './app.routes';
 import AuthRoutes from './auth.routes';
 import {View, ActivityIndicator} from 'react-native';
+import {AuthContext} from '../contexts/AuthContext';
 
 function Routes() {
-  const isAuthenticaded = false;
-  const loading = false;
+  const {isAuthenticated, loading} = useContext(AuthContext);
 
   if (loading) {
     return (
@@ -22,7 +22,7 @@ function Routes() {
     );
   }
 
-  return isAuthenticaded ? <AppRoutes /> : <AuthRoutes />;
+  return isAuthenticated ? <AppRoutes /> : <AuthRoutes />;
 }
 
 export default Routes;
