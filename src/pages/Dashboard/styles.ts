@@ -8,6 +8,9 @@ export const styles = StyleSheet.create({
     paddingVertical: 15,
     backgroundColor: '#1d1d2e',
   },
+  titleArea: {
+    flexDirection: 'row',
+  },
   title: {
     fontSize: 30,
     fontWeight: 'bold',
@@ -37,5 +40,15 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     color: '#101026',
     fontWeight: 'bold',
+  },
+
+  logoutButton: {
+    width: '90%',
+    height: 40,
+    backgroundColor: '#FF0000',
+    borderRadius: 4,
+    marginVertical: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
