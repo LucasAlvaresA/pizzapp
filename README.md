@@ -10,7 +10,9 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+- This repository is part of the Pizzapp project ( [Web](https://github.com/LucasAlvaresA/pizzapp-web), [Back-end](https://github.com/LucasAlvaresA/pizzapp-backend) )
+
+- To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -30,3 +32,4 @@ To get a local copy up and running follow these simple example steps.
 - Run the project
 
       npm run start
+
